@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.nav-holder {
+  position: fixed;
+  left: 10px;
+}
+.nav-holder .bars {
+  display: none;
+  cursor: pointer;
+}
+.nav-holder .bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: black;
+  height: 3px;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+.nav-holder .bars .active .bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-holder .bars .active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav-holder .bars .active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-holder .active .bar:nth-child(2) {
+  opacity: 0;
+}
+.nav-holder .active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.nav-holder .active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+.nav-holder .links {
+  display: flex;
+  background-color: rgb(139, 139, 139);
+  height: 60px;
+  width: 100vw;
+  overflow: hidden;
+  margin-left: -10px;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: height 0.3s, opacity 0.2s ease-in;
+}
+.nav-holder .links a {
+  color: black;
+  text-decoration: none;
+}
+.nav-holder .links.active {
+  height: 200px;
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-holder .bars {
+    display: block;
+  }
+  .nav-holder .links {
+    height: 0;
+    opacity: 0;
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
