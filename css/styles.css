@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: center;
 }
 .home .hero p {
-  max-width: 670px;
+  max-width: 470px;
   text-align: center;
   color: #f5f5f5;
   font-family: "Lora", serif;
@@ -207,52 +207,130 @@ h1, h2, h3, h4, h5, h6, p {
   font-size: 20px;
 }
 
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-}
-
 @media screen and (max-width: 960px) {
-  .about {
-    margin-top: 300px;
+  .home .home-info .info-cards {
+    width: 100%;
+    height: 2250px;
+    flex-direction: column;
+  }
+  .home .home-info .info-cards .card {
+    margin: 40px auto 0 auto;
+    width: 100%;
+    height: 500px;
+    background-color: #f5f5f5;
   }
 }
-.browse {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 100px;
-  width: 100%;
+.about {
+  margin-top: 90px;
 }
-.browse .grid-holder {
-  width: 90%;
-  min-height: 500px;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 800px 350px;
-  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
-  gap: 40px;
-  padding: 40px;
-}
-.browse .grid-holder .grid-item-img {
-  background-color: aliceblue;
-}
-.browse .grid-holder .grid-item-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 0 -10px;
-}
-.browse .grid-holder .grid-item {
-  background-color: blue;
-  color: greenyellow;
+.about h1 {
+  color: rgb(38, 38, 38);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  text-decoration: underline 2px solid #EB4511;
+  text-underline-offset: 5px;
+  margin-top: 20px;
 }
 
-@media screen and (max-width: 960px) {
-  .browse {
-    margin-top: 300px;
+.browse {
+  width: 100%;
+  height: 100%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.browse h1 {
+  color: rgb(38, 38, 38);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  text-decoration: underline 2px solid #EB4511;
+  text-underline-offset: 5px;
+  margin-top: 20px;
+}
+.browse .grid {
+  width: 90%;
+  height: 90%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 600px 300px;
+  grid-template-rows: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px;
+  gap: 20px;
+  padding: 20px 0;
+  margin-bottom: 40px;
+}
+.browse .grid .grid-img-one {
+  background-image: url(../images/gal1.jpg);
+  background-position: 50px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-img-two {
+  background-image: url(../images/gal2.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-img-three {
+  background-image: url(../images/gal3.jpg);
+  background-position: 20px auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-img-four {
+  background-image: url(../images/gal4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-img-five {
+  background-image: url(../images/gal5.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-img-six {
+  background-image: url(../images/gal6.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-img-seven {
+  background-image: url(../images/gal7.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-img-eight {
+  background-image: url(../images/gal8.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-img-nine {
+  background-image: url(../images/gal9.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-img-ten {
+  background-image: url(../images/gal10.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.browse .grid .grid-txt {
+  padding: 10px 0 10px 10px;
+  border: solid #1D84B5 3.5px;
+}
+
+@media screen and (max-width: 1100px) {
+  .browse .grid {
+    grid-template-columns: 600px;
+    grid-template-rows: 300px 150px 300px 150px 300px 150px 300px 150px 300px 150px 300px 150px 300px 150px 300px 150px 300px 150px 300px 150px;
+    gap: 20px;
+    padding: 20px 0;
   }
 }
 .contact {
