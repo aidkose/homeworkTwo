@@ -6,18 +6,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #262626;  
+    background-color: $black;  
 }
 .bars {
 	display: none;
+	cursor: pointer;
 	.bar {
 		display: block;
 		width: 25px;
 		margin: 5px 0;
-		background-color: whitesmoke;
+		background-color: $white;
 		height: 3px;
 		border-radius: 10px;
-		cursor: pointer;
 		transition: all 0.2s ease-in-out;
 	}
 }
@@ -37,12 +37,11 @@
 .logo {
     height: 60px;
     width: 100px;
-    background-image: url(../images/logo.png);
+    background-image: url(../images/logo3.png);
+	margin-left: 20px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    margin-left: 50px;
-    // background-color: yellow;
 }
 .links {
 	display: flex;
@@ -55,7 +54,7 @@
         display: block;
         justify-content: center;
         align-items: center;
-        color: whitesmoke;
+        color: $white;
         text-decoration: none;
         margin-left: 50px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -63,7 +62,7 @@
 }
 
 .links.active {
-	height: 350px;
+	height: 450px;
 	opacity: 1;
 }
 @media screen and (max-width: 960px) {
@@ -78,12 +77,12 @@
         top: 5px;
     }
 	.links {
-        margin: 200px auto 60px auto;
-        padding-top: 150px;
+        margin: 10px auto;
+        padding-top: 250px;
         overflow: hidden;
 		height: 0;
         width: 100vw;
-        background-color: #262626;
+        background-color: $black;
 		opacity: 0;
 		flex-direction: column;
             a {
